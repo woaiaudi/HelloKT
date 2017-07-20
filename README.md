@@ -23,6 +23,11 @@ void
 main 方法申明在file中，当作一个普通的函数。不像java main方法必须是psv（public static ）的
 
 ### 声明变量
+- 只读  `val`
+```
+var hostIp = "192.168.0.2"
+```
+- 可变变量  `var`
 ```
 var helloKT = HelloKT()
 ```
