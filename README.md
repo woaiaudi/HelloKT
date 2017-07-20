@@ -84,3 +84,16 @@ for ((index, value) in array.withIndex()) {
     println("the element at $index is $value")
 }
 ```
+
+
+### 定义集合
+#### array
+- 不可变数组
+```
+val testArr = listOf(22,33,44)
+```
+#### map
+- 不可变Map
+```
+val testMap = mapOf("ka" to "va", "kb" to 2, "kc" to testArr)
+```
