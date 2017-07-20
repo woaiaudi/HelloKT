@@ -118,3 +118,30 @@ for ((k,v) in testMap){
     println("[$k : $v]")
 }
 ```
+
+#### 实用的校验方法
+测试数据
+```
+var userInfo = mapOf(
+            "id" to 1234,
+            "userName" to "jack",
+            "email" to "zzzzz@qq.com")
+```
+- 如果邮件为空，设置一个默认值
+```
+var userEmail = userInfo["emailxxxxx"]?:"defaultEmail@qq.com"
+println(userEmail)
+```
+- 如果邮件为空，抛出异常
+```
+var userEmail = userInfo["emailxxxxx"]?:throw IllegalStateException("Emailis missing!")
+println(userEmail)
+```
+- 如果email不为空，执行更新UI
+```
+var userEmail = userInfo["emailxxxxx"]
+userEmail?.let{
+    //只有 userEmail 非空时才执行
+    println("将UI上电子邮件更新为$userEmail")
+}
+```

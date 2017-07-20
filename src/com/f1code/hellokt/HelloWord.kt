@@ -28,6 +28,10 @@ fun main(args:Array<String>){
 }
 
 class HelloKT {
+//    var currentLocation:String by lazy {
+//        var currLoc = "xxxxsss"
+//        return@lazy currLoc
+//    }
     //默认值 80
     fun sum(a: Int, b: Int=80): Int {
         return a + b
