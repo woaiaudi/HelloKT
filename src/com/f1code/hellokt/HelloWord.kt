@@ -17,7 +17,6 @@ fun main(args:Array<String>){
 
     val testMap = mapOf("ka" to "va", "kb" to 2, "kc" to testArr)
     for ((k,v) in testMap){
-
         println("[$k : $v]")
     }
 

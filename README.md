@@ -92,8 +92,22 @@ for ((index, value) in array.withIndex()) {
 ```
 val testArr = listOf(22,33,44)
 ```
+
+-- 遍历
+```
+for ((iii,vvv) in testArr.withIndex()){
+    println("item[$iii]:$vvv")
+}
+```
 #### map
 - 不可变Map
 ```
 val testMap = mapOf("ka" to "va", "kb" to 2, "kc" to testArr)
+```
+
+-- 遍历
+```
+for ((k,v) in testMap){
+    println("[$k : $v]")
+}
 ```
