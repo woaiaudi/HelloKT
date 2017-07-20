@@ -93,7 +93,11 @@ for ((index, value) in array.withIndex()) {
 val testArr = listOf(22,33,44)
 ```
 
--- 遍历
+- 访问
+```
+println(testArr[1])
+```
+- 遍历
 ```
 for ((iii,vvv) in testArr.withIndex()){
     println("item[$iii]:$vvv")
@@ -104,8 +108,11 @@ for ((iii,vvv) in testArr.withIndex()){
 ```
 val testMap = mapOf("ka" to "va", "kb" to 2, "kc" to testArr)
 ```
-
--- 遍历
+- 访问
+```
+println(testMap["kc"])
+```
+- 遍历
 ```
 for ((k,v) in testMap){
     println("[$k : $v]")

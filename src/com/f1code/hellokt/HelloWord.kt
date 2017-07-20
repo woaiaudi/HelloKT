@@ -20,6 +20,10 @@ fun main(args:Array<String>){
         println("[$k : $v]")
     }
 
+    //访问集合对象
+    println(testArr[1])
+    println(testMap["kc"])
+
 
 }
 
