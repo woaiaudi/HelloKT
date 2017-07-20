@@ -52,6 +52,17 @@ fun printSum(a: Int, b: Int) {
 }
 ```
 
+### 单表达式函数
+```
+fun theAnswer() = 42
+```
+等同于
+```
+fun theAnswer(): Int {
+    return 42
+}
+```
+
 ### 可空变量
 ```
 //返回可以为空的int
@@ -119,7 +130,7 @@ for ((k,v) in testMap){
 }
 ```
 
-#### 实用的校验方法
+### 实用的校验方法
 测试数据
 ```
 var userInfo = mapOf(
