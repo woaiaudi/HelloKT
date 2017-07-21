@@ -82,6 +82,21 @@ fun parseInt(str: String): Int? {
 }
 ```
 
+### if分支可以作为块，最后一个表达式是该块的值：
+```
+var min = if(a<b){
+    println("筛选出 较小的值 ：[a = $a]")
+    a
+}else{
+    println("筛选出 较小的值 ：[b = $b]")
+    b
+}
+```
+简写后，就是Kotlin的三元表达式
+```
+var max = if (a>b) a else b
+```
+
 ### For 循环
 ```
 val items = listOf("apple", "banana", "kiwi")
