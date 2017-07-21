@@ -32,6 +32,16 @@ var hostIp = "192.168.0.2"
 var helloKT = HelloKT()
 ```
 
+- 数值常量 可使用`_`增加数值的可阅读性
+```
+val oneMillion = 1_000_000
+val creditCardNumber = 1234_5678_9012_3456L
+val socialSecurityNumber = 999_99_9999L
+val hexBytes = 0xFF_EC_DE_5E
+val bytes = 0b11010010_01101001_10010100_10010010
+```
+![](http://ogeijtkoy.bkt.clouddn.com/20170721091838.png)
+
 ### 函数定义
 ```
 fun sum(a: Int, b: Int): Int {

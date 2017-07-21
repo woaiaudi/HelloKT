@@ -13,16 +13,20 @@ fun main(args: Array<String>) {
             "userName" to "jack",
             "email" to "zzzzz@qq.com")
 
-//    //如果邮件为空，设置一个默认值
-//    var userEmail1 = userInfo["email2"]?:"defaultEmail@qq.com"
-//    println(userEmail1)
-//
-//    //如果邮件为空，抛出异常
-//    var userEmail2 = userInfo["email2"]?:throw IllegalStateException("Emailis missing!")
-//    println(userEmail2)
+    //如果邮件为空，设置一个默认值
+    var userEmail1 = userInfo["email2"]?:"defaultEmail@qq.com"
+    println(userEmail1)
+
+    //如果邮件为空，抛出异常
+    var userEmail2 = userInfo["email2"]?:throw IllegalStateException("Emailis missing!")
+    println(userEmail2)
 
     var userEmail = userInfo["emailxxxx"]
     userEmail?.let{
         println("将UI上电子邮件更新为$userEmail")
     }
+
+    // YY 一下下
+    var myMoney = 99_999_999
+    println(myMoney)
 }
